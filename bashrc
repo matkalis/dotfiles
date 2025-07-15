@@ -5,7 +5,7 @@ alias ...="cd ../.."
 alias ls="LC_COLLATE=C ls -lahF --color=auto --quoting-style=literal" #show hidden, detailed, colored, without quotes
 alias grep="grep --color"
 alias rg="rg --context 2 --smart-case"
-alias rgf='rg --files | grep --color'
+alias rgf='rg --files --hidden | grep --color'
 alias open="xdg-open ."
 
 # Ranger
