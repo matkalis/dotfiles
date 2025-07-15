@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# Convert a .webm file to a .gif using palette generation
+
+input="$1"
+basename="${input%.*}"
+palette="palette.png"
+output="${basename}.gif"
+
+echo "Generating palette..."
+ffmpeg -y -i "$input" -vf palettegen "$palette"
+
+echo "Creating GIF..."
+ffmpeg -y -i "$input" -i "$palette" -filter_complex paletteuse -r 10 "$output"
+
+echo "Cleaning up palette..."
+rm "$palette"
+
+read -p "Delete original .webm file ($input)? [y/N]: " answer
+if [[ "$answer" == [Yy] ]]; then
+    rm "$input"
+    echo "$input deleted."
+else
+    echo "$input kept."
+fi
