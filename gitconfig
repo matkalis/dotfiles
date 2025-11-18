@@ -9,7 +9,7 @@
     l = log -n25 --graph --abbrev-commit --decorate --format=format:'%C(yellow)%h%C(reset)%C(auto)%d%C(reset) %C(dim white)%an%C(reset) %C(normal)%s%C(reset) %C(bold blue)(%ar)%C(reset)' --all
     up = pull --rebase --autostash
 [credential "https://github.com"]
-    username = galanonym
+    username = matkalis
 [core]
 	editor = vim
 	compression = 0
