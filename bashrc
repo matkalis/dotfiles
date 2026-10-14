@@ -7,6 +7,7 @@ alias grep="grep --color"
 alias rg="rg --context 2 --smart-case"
 alias rgf='rg --files --hidden | grep --color'
 alias open="xdg-open ."
+alias gitmeld="git difftool -d -t meld"
 
 # Ranger
 #alias r="source ranger"

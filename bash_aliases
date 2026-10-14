@@ -1,5 +1,5 @@
 # Fast SSH connection
-alias ssh_xxx"ssh -p 2211 user@1.1.1.1"
+alias ssh_xxx="ssh -p 2211 user@1.1.1.1"
 
 # Fast cd bookmark
 alias custom="cd ~/php/project"
